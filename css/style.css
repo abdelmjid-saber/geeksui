@@ -1,0 +1,126 @@
+:root {
+  --bs-gray-100: #f5f4f8;
+  --bs-gray-200: #ecebf1;
+  --bs-primary: #754ffe;
+  --bs-secondary: #79758f;
+  --bs-dark: #18113c;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--bs-dark);
+}
+.btn-more {
+  background-color: var(--bs-primary);
+  border-color: var(--bs-primary);
+  color: #fff;
+  padding: 0.5rem 1rem;
+  transition: 0.3s;
+}
+.btn-more:hover {
+  background-color: #6d47f7;
+  color: white;
+}
+/* Start Header */
+.navbar-header {
+  background-color: var(--bs-dark);
+}
+.navbar-toggler {
+  border: none;
+}
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+/* End Header  */
+/* Start Hero */
+.hero {
+  background-color: var(--bs-dark);
+  height: calc(100vh + 70px);
+}
+.hero img {
+  width: 100%;
+}
+.second-hero {
+  background-color: var(--bs-dark);
+}
+/* End Hero */
+/* Start content */
+.content {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.card-content {
+  border: 1px solid var(--bs-gray-200);
+  border-radius: 10px;
+  max-width: 90%;
+}
+.card-content img {
+  position: relative;
+  width: 90%;
+  bottom: 30px;
+  left: 30px;
+  border-radius: 10px;
+}
+.cardc-title {
+  color: var(--bs-dark);
+  cursor: pointer;
+}
+.cardc-title:hover {
+  color: var(--bs-dark-primary);
+}
+.btn-card a {
+  color: var(--bs-primary);
+  border: 1px solid var(--bs-primary);
+  padding: 1rem 1.5rem;
+  width: 100%;
+  transition: 0.5s;
+  position: relative;
+}
+.btn-card a:hover {
+  background-color: var(--bs-primary);
+  color: white;
+}
+.btn-card a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: var(--bs-gray-200);
+  top: -30px;
+  left: 0;
+}
+/* End content */
+/* Start Components */
+.components .container {
+  background-color: var(--bs-dark);
+}
+.p-container {
+  padding-bottom: 6.5rem;
+  padding-top: 6.5rem;
+  border-radius: 10px;
+}
+/* End Components */
+/* Start feature */
+@media (min-width: 767px) {
+  .boxs {
+    padding: 100px;
+  }
+  .feature {
+    padding: 3rem;
+  }
+}
+/* End feature */
+/* Start Footer  */
+.footer span {
+  color: var(--bs-primary);
+}
+/* End Footer  */
